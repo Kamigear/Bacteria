@@ -1,0 +1,34 @@
+<html>
+	<head>
+    	<title>Web Viewer Example</title>
+    	
+    	<script>
+        	function loadWebPage() {
+            	var url = document.getElementById("myTextBox").value;
+            	
+            	//webViewer is id for line 30
+            	var iframe = document.getElementById("webViewer");
+            	
+            	//set the web url source
+            	iframe.src = url;
+        }
+    	</script>
+	
+	</head>
+		<body>
+    	
+    		<h1>Web Viewer Example</h1>
+
+    		<h3>here an example</h3>
+
+    		<p>https://api.genderize.io/?name=peter</p>
+    	
+    	<input type="text" id="myTextBox" placeholder="Enter URL">
+    	
+    	<button type="button" onclick="loadWebPage()">Load Web Page</button>
+    	
+    	
+    	
+    	<iframe id="webViewer" width="800" height="600"></iframe>
+</body>
+</html>

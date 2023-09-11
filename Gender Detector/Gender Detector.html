@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Gender Detector</title>
+	<script>
+		function getGender() {
+			
+			// get text eleement from mytextbox
+			var nameInput = document.getElementById("myTextBox").value;
+			
+			//set the url
+			var url = "https://api.genderize.io/?name=" + encodeURIComponent(nameInput);
+
+			fetch(url)
+				.then(response => response.json())
+				
+				// get the result
+				.then(data => {
+					var result = "Gender: " + data.gender;
+					document.getElementById("result").textContent = result;
+				})
+		}
+	</script>
+</head>
+<body>
+	<p>Give a name please</p>
+	<input type="text" id="myTextBox" placeholder="Enter a name" maxlength="50">
+	<button type="button" class="myButton" onclick="getGender()">Click Me</button>
+	<div id="result"></div>
+</body>
+</html>

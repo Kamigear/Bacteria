@@ -1,0 +1,29 @@
+Arithmetic Operators:
++ (Addition): Used for addition of two numbers or concatenation of strings.
+- (Subtraction): Used for subtraction of two numbers.
+* (Multiplication): Used for multiplication of two numbers.
+/ (Division): Used for division of two numbers.
+% (Modulus): Returns the remainder of division between two numbers.
+++ (Increment): Increases the value of a variable by 1.
+-- (Decrement): Decreases the value of a variable by 1.
+
+Assignment Operators:
+= (Assignment): Assigns a value to a variable.
++= (Addition Assignment): Adds a value to a variable and assigns the result to the variable.
+-= (Subtraction Assignment): Subtracts a value from a variable and assigns the result to the variable.
+*= (Multiplication Assignment): Multiplies a variable by a value and assigns the result to the variable.
+/= (Division Assignment): Divides a variable by a value and assigns the result to the variable.
+%= (Modulus Assignment): Calculates the modulus of a variable with a value and assigns the result to the variable.
+
+Comparison Operators:
+== (Equal to): Checks if two values are equal.
+!= (Not equal to): Checks if two values are not equal.
+> (Greater than): Checks if the left operand is greater than the right operand.
+< (Less than): Checks if the left operand is less than the right operand.
+>= (Greater than or equal to): Checks if the left operand is greater than or equal to the right operand.
+<= (Less than or equal to): Checks if the left operand is less than or equal to the right operand.
+Logical Operators:
+&& (Logical AND): Returns true if both operands are true.
+|| (Logical OR): Returns true if either of the operands is true.
+! (Logical NOT): Negates a boolean value.
+These are just a few examples of operators in JavaScript. There are additional operators like bitwise operators (&, |, ^, etc.) and string operators (+ for string concatenation), among others. Understanding and utilizing operators is crucial for performing various operations and making logical decisions in JavaScript programming.
