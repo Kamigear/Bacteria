@@ -1,0 +1,315 @@
+/*all*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	scroll-padding: var(--scroll-padding, 5rem);
+	object-fit: cover;
+}
+p{
+	font-family: 'Quicksand', sans-serif;
+}
+body{
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Crimson Text', serif;
+	font-family: 'Oxygen', sans-serif;
+}
+}
+.row{
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+	/* Style the sidebar */
+	.sidebar {
+	    width: 230px;
+	    background-color: #333;
+	    color: #fff;
+	    height: 100%;
+	    position: fixed;
+	}
+	.sidebar ul {
+	    list-style: none;
+	    padding: 0;
+	}
+	
+	.sidebar ul li {
+		padding: 10px;
+		padding-left: 30px;
+	}
+	
+	.sidebar ul li a {
+	   color: #fff;
+ 	   text-decoration: none;
+	}
+
+/*col-2*/
+	.col-2{
+ 	min-width: 300px;
+  	text-align: center; 
+ 	display: flex;
+ 	flex-direction: column;
+  	justify-content: center;
+ 	align-items: center;
+ 	padding-left: 230px;
+ 	
+	}
+	.col-2 img{
+		max-width: 100%;
+		padding: 50px 0;
+	}	
+	.col-2 h1{
+		font-size: 40px;
+		line-height: 60px;
+		margin: 25px 0;
+		text-align: center;
+	}	
+	.col-2 p{
+		text-align: center;
+	}
+
+/*col-3*/
+	.col-3{
+ 	min-width: 300px;
+  	text-align: center; 
+ 	display: flex;
+ 	flex-direction: column;
+  	justify-content: center;
+ 	align-items: left;
+ 	padding-top: 50px;
+ 	padding-bottom: 50px;
+ 	padding-left: 230px;
+ 	align-items: center;
+	}
+	.col-3 h1{
+		font-size: 40px;
+		line-height: 60px;
+		margin: 25px 0;
+		text-align: left;
+		padding-left: 50px;
+	}	
+	.col-3 p{
+		text-align: center;
+		font-family: ;
+		padding-left: 50px;
+		padding-top: 50px;
+	}	
+	.col-3 img{
+		padding-left: 15px;
+	}
+
+/*Introduction*/
+		/*buttonIntroduction*/
+		.btnIntroduction{
+		display: inline-block;
+		background:#ff523b;
+		color: #fff;
+		padding: 8px 30px;
+		border-radius: 30px;
+		transition: background 0.5s;
+		position: center;
+		margin: 20px 0;
+		}
+		.btnIntroduction:hover{
+			background-color: #563434;
+		}
+		
+		/*BannerIntroduction*/
+		.bannerIntoduction{
+			background: radial-gradient(#fff, #c1f5f1);
+		}
+		#bannerIntoduction{
+		background-image: url("image/Introduction.jpg");
+		background-size: cover;
+		width: 100%;
+		}
+
+/*What is bacteria*/	
+		/*BannerBacteria*/
+		.whatBacteria{
+			background: radial-gradient(#fff, #c1f5f1);
+		}
+		#whatBacteria{
+		background-image: url("image/BacteriaBanner.png");
+		background-size: cover;
+		width: 100%;
+		}
+		/*imgBacteria*/
+		#imgBacteria{
+			width: 150px;
+			height: 150px;
+		}
+	
+	/*Harmful Bacteria*/	
+		/*Bacteria*/
+		.bannerBacteria{
+			background: radial-gradient(#fff, #c1f5f1);
+		}
+		.harmfulBacteria{
+		background-image: url("image/harmfulBacteria.png");
+		width: 100%;
+		}
+		/*imgBacteria*/
+		#imgBacteria{
+			width: 150px;
+			height: 150px;
+		}
+		
+		/*bacteria dropdown*/
+		.containerharm {  display: grid;
+  		grid-template-columns: 1fr 1fr 1fr;
+  		grid-template-rows: 0.5fr;
+  		gap: 0px 0px;
+  		grid-auto-flow: row;
+  		padding-left: 230px;
+  		text-align: center;
+		}
+
+		.containerharm button {
+            padding: 20px;
+            width: 250px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            background-color: lightgrey;
+            height: 50px;
+            pointer-events: auto;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        .containerharm button:hover {
+            background-color: grey;
+        }
+        .containerharm button span {
+            display: inline-block;
+            position: relative;
+            transition: padding-right 0.5s;
+        }
+        .containerharm button span:after {
+            content: '->';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: opacity 0.5s, right 0.5s;
+        }
+        .containerharm button:hover span {
+            padding-right: 25px;
+        }
+        .containerharm button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+		.containerharm p {
+			margin-bottom: 20px;
+		}
+		.Ecoli{ 
+		grid-area: Ecoli;
+		 		margin-bottom: 20px;
+		 		grid-area: 1 / 1 / 2 / 2;
+		}
+		.Norovirus{ 
+		grid-area: Norovirus
+		 		margin-bottom: 20px;
+		 		grid-area: 1 / 2 / 2 / 3;
+		}
+		.Salmonella{
+		grid-area: Salmonella;
+		 		margin-bottom: 20px;
+		 		grid-area: 1 / 3 / 2 / 4;
+		}
+
+}
+/*Useful Bacteria*/	
+		/*Bacteria*/
+		.bannerBacteriause{
+			background: radial-gradient(#fff, #c1f5f1);
+		}
+		.usefulBacteria{
+		background-image: url("image/usefulBacteria.png");
+		width: 100%;
+		}
+		
+		/*imgBacteria*/
+		#imgBacteria{
+			width: 150px;
+			height: 150px;
+		}
+		
+		/*bacteria dropdown*/
+		.containeruse {  display: grid;
+  		grid-template-columns: 1fr 1fr 1fr;
+  		grid-template-rows: 0.5fr;
+  		gap: 0px 0px;
+  		grid-auto-flow: row;
+  		padding-left: 230px;
+  		text-align: center;
+		}
+
+		.containeruse button {
+            padding: 20px;
+            width: 250px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            background-color: lightgrey;
+            height: 50px;
+            pointer-events: auto;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        .containeruse button:hover {
+            background-color: grey;
+        }
+        .containeruse button span {
+            display: inline-block;
+            position: relative;
+            transition: padding-right 0.5s;
+        }
+        .containeruse button span:after {
+            content: '->';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: opacity 0.5s, right 0.5s;
+        }
+        .containeruse button:hover span {
+            padding-right: 25px;
+        }
+        .containeruse button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+		.Lactobacillus{ 
+		grid-area: Lactobacillus;
+		 		margin-bottom: 20px;
+		 		grid-area: 1 / 1 / 2 / 2;
+		}
+		.Bifidobacteria{ 
+		grid-area: Bifidobacteria;
+		 		margin-bottom: 20px;
+		 		grid-area: 1 / 2 / 2 / 3;
+		}
+		.Saccharomycesboulardii{
+		grid-area: Saccharomycesboulardii;
+		 		margin-bottom: 20px;
+		 		grid-area: 1 / 3 / 2 / 4;
+		}
+
+}
+/*Fun Fact*/
+		/*BannerIntroduction*/
+		.FunFact{
+			background: radial-gradient(#fff, #c1f5f1);
+		}
+		#FunFact{
+		background-image: url("image/FunFact.png");
+		background-size: cover;
+		width: 100%;
+		}
+		.FunFact p {
+			margin-bottom: 50px;
+		}
+
